@@ -1,8 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-title> Home </ion-title></ion-col>
+        <ion-col class="ion-text-end"><ion-button (click)="salir()" color="danger" size="small">Salir</ion-button></ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
@@ -14,7 +17,11 @@
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  
+    Homepage
+
   </div>
 </ion-content>
+
+
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
